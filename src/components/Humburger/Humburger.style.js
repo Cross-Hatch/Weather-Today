@@ -5,6 +5,7 @@ export const Container = styled.div`
   padding: 0.5em;
   aspect-ratio: 1 / 1;
   transition: transform 300ms ease;
+  transform-origin: center;
 
   &:hover {
     transform: translateY(-4px);
