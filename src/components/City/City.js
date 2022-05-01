@@ -1,10 +1,10 @@
 import { CityName, Container, TimeZone } from './City.style';
 
-const City = (props) => {
+const City = ({ city, timezone }) => {
   return (
     <Container>
-      <CityName>{props.city}</CityName>
-      <TimeZone>{props.timezone}</TimeZone>
+      <CityName>{city}</CityName>
+      <TimeZone>{timezone}</TimeZone>
     </Container>
   );
 };
