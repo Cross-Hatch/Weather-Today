@@ -1,10 +1,10 @@
 import { Container, Unit } from './Temprature.style';
 
-const Temprature = (props) => {
+const Temprature = ({ temprature, unit }) => {
   return (
     <Container>
-      {props.temprature}
-      <Unit>{props.unit}</Unit>
+      {temprature}
+      <Unit>{unit}</Unit>
     </Container>
   );
 };
