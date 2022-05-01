@@ -1,14 +1,14 @@
 import { Container, Day, Greating } from './Greatings.style';
 
-const Greatings = (props) => {
+const Greatings = ({ time, day }) => {
   function getGreating(time) {
     return time;
   }
 
   return (
     <Container>
-      <Greating>{getGreating(props.time)}</Greating>
-      <Day>{props.day}</Day>
+      <Greating>{getGreating(time)}</Greating>
+      <Day>{day}</Day>
     </Container>
   );
 };
