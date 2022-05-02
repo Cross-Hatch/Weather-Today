@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  margin: 0 auto 0 0;
+  margin: 0 0 0 auto;
   padding: 0.5em;
   aspect-ratio: 1 / 1;
   transition: transform 300ms ease;
@@ -17,5 +17,6 @@ export const Container = styled.div`
 `;
 
 export const Img = styled.img`
+  transform: rotateY(180deg);
   filter: ${(props) => props.theme.shadow};
 `;
