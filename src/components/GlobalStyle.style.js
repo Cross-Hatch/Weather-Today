@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
     /*!
@@ -97,4 +97,20 @@ select {
   }
 }
 
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  max-height: 100vh;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 0 20vw;
+    height: calc(100vh - 70px);
+  }
 `;
