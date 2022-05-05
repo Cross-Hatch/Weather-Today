@@ -5,7 +5,7 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2em;
+  /* margin-bottom: 2em; */
 `;
 
 export const Greating = styled.div`
