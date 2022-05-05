@@ -10,7 +10,18 @@ import CurrentTemprature from './components/CurrentTemprature/CurrentTemprature'
 import Greatings from './components/Greatings/Greatings';
 import AsidePanel from './components/AsidePanel/AsidePanel';
 
+
 function App() {
+  
+  
+  const day_Form = (d)=>{
+    let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    let day = days[d.getDay()]
+    
+
+    return `${day}`
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
@@ -25,7 +36,7 @@ function App() {
             description={'Feels like 18°C'}
           />
 
-          <Greatings time={'good morning'} day={'Sunday'} />
+          <Greatings time={'good morning'} day= {day_Form(new Date())}/>
           <SearchBar />
         </div>
       </Wrapper>
