@@ -8,6 +8,6 @@ export const Container = styled.div`
 `;
 
 export const Icon = styled.img`
-  width: 12em;
+  width: 8em;
   aspect-ratio: 1;
 `;
