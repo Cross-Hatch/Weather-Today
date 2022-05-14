@@ -4,14 +4,13 @@ import useFetchWeather from './useFetchWeather';
 export const WeatherContext = createContext();
 
 export function WeatherContexProvider({ children }) {
-  const [location, setLocation] = useState('ghana');
+  const [location, setLocation] = useState();
   const { data, error } = useFetchWeather({ location: location });
-
-//   console.log(data, location)
-  const setValue = (locate) => {
-    setLocation(locate);
-  };
-
+  
+  const setValue = (o) => {
+    setLocation(o);
+  }
+    
   return (
     <WeatherContext.Provider value={{location, setValue, data, error}} >
       {children}
