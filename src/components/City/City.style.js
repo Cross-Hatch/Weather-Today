@@ -10,6 +10,7 @@ export const Container = styled.div`
 
 export const CityName = styled.h2`
   font-size: 2.2rem;
+  text-transform: capitalize;
 `;
 
 export const TimeZone = styled.h3`
