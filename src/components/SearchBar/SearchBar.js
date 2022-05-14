@@ -1,6 +1,5 @@
 import { Container, SearchBox, SearchButton } from './SearchBar.style';
 import search from '../../assets/search-button.svg';
-import useFetchWeather from '../../hooks/useFetchWeather';
 import { useContext, useState } from 'react';
 import { WeatherContext } from '../../hooks/WeatherContext';
 
