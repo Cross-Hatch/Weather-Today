@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.aside`
-  background-image: ${props => props.theme.gradient};
+  background-image: ${(props) => props.theme.gradient};
   box-shadow: -10px 20px 50px 8px #0a0a0a;
+  border-radius: 10px 0 0 10px;
   position: absolute;
   right: 0;
   top: 0;
-  width: 30vw;
-  height: 100vh;
+  width: 35vw;
+  min-height: 100vh;
   padding: 5em 2em;
   z-index: 1;
 `;
@@ -35,4 +36,11 @@ export const ForecastContainer = styled.div`
     column-gap: 1.5em;
     margin: 1em 0;
   }
+`;
+
+export const ForecastStatsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3em;
 `;
